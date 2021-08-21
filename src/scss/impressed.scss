@@ -1,0 +1,65 @@
+.impressed{
+     background-image: url("../image/impressed-bg.jpg");
+     background-size: cover;
+
+     &__inner{
+          position: relative;
+          min-height: 350px;
+     }
+
+     &__title{
+          font-size: 20px;
+          font-family: "myriad pro regular";
+          color: white;
+          margin-bottom: 59px;
+     }
+
+     &__text{
+          margin-bottom: 34px;
+          font-size: 16px;
+          font-family: "open sans";
+          text-align: justify;
+          color: white;
+          max-width: 480px;
+     }
+
+     &__author-name{
+          font-size: 14px;
+          font-family: "open sans";
+          margin-bottom: 5px;
+          color: white;
+     }
+
+     &__author-position{
+          font-size: 14px;
+          font-family: "open sans";
+          color: white;
+
+          span{
+               color: #19BD9A;
+          }
+     }
+
+     &__monitor{
+          position: absolute;
+          top:-18px;
+          right: 0;
+
+          .monitor__text{
+               position: absolute;
+               color: white;
+               top: 112px;
+               left: 137px;
+               font-size: 30px;
+               font-family: "BIG JOHN";
+
+               span{
+                    color: #19BD9A;
+               }
+          }
+
+          @media (max-width: 1200px){
+               display: none;
+          }
+     }
+}

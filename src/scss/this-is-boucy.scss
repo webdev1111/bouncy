@@ -1,0 +1,71 @@
+.this-is-boucy{
+	
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__description{
+		max-width: 465px;
+
+		@media (max-width: 768px){
+			max-width: 100%;
+		}
+	}
+
+	&__image{
+		max-width:100%;
+		height:auto;
+		margin-left: 50px;
+		
+		@media (max-width: 768px){
+			display: none;
+		}
+	}
+}
+
+.description{
+	padding-top: 25px;
+
+	&__tittle{
+		margin-bottom: 35px;
+	}
+
+	&__text{
+		line-height: 2;
+		margin-bottom: 45px;
+		text-align: justify;
+	}
+
+	&__more{
+		display: block;
+		width: 140px;
+		height: 35px;
+		border: solid 1px black;
+		border-radius: 35px;
+		text-align: center;
+		line-height: 35px;
+		font-size: 16px;
+		font-family: "open sans";
+		color: #333B46;
+		text-decoration: none;
+
+		&:hover{
+			background-color: black;
+			color: white;
+			transition-property: background-color, color;
+			transition-duration: 0.5s;
+		}
+
+		&:focus-visible{
+			background-color: #B3DAE0;
+			transition-duration: 0s;
+		}
+
+		&:active{
+			background-color: gray;
+			transition-property: background-color;
+			transition-duration: 0s;
+		}
+	}
+}
