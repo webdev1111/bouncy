@@ -1,0 +1,76 @@
+@font-face{
+     font-family: "BIG JOHN";
+     src: url("../font/BIG JOHN.otf")/* format("otf")*/;
+}
+
+@font-face{
+     font-family: "open sans";
+     src: url("../font/opensans.otf")/* format("otf")*/;
+}
+
+@font-face{
+     font-family: "myriad pro regular";
+     src: url("../font/myriad pro regular.otf")/* format("otf")*/;
+}
+
+h2{
+     font-size: 20px;
+     font-family: "myriad pro regular";
+     color: #333B46;
+}
+
+body > a{
+     position: relative;
+     top: -60px;
+}
+
+.common-text{
+     font-size: 16px;
+     font-family: "open sans";
+     color: #333B46;
+}
+
+.tittle-text-white{
+     color: white;
+}
+
+.common-text-white{
+     font-size: 16px;
+     font-family: "open sans";
+     color: white;
+}
+
+.container{
+     max-width: 1170px;
+     margin: 0 auto;
+
+     & > *{
+          padding: 80px 50px 50px 50px;
+          box-sizing: border-box;
+
+          @media (max-width: 768px){
+               padding: 50px 30px;
+          }
+
+          @media (max-width: 480px){
+               padding: 50px 10px;
+          }
+     }
+}
+
+@import "header";
+@import "hello";
+@import "this-is-boucy";
+@import "details-about-bouncy";
+@import "featured-project";
+@import "our-services";
+@import "impressed";
+@import "the-portfolio";
+@import "the-team";
+@import "testimonials";
+@import "latest-news";
+@import "our-price";
+@import "subscribe-us";
+@import "contact-us";
+@import "find-us-on-the-map";
+@import "footer";
